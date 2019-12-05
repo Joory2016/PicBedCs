@@ -34,7 +34,11 @@
             this.btn_copy = new System.Windows.Forms.Button();
             this.btn_push = new System.Windows.Forms.Button();
             this.btn_saveImage = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -66,7 +70,7 @@
             // btn_copy
             // 
             this.btn_copy.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn_copy.Location = new System.Drawing.Point(415, 247);
+            this.btn_copy.Location = new System.Drawing.Point(415, 261);
             this.btn_copy.Name = "btn_copy";
             this.btn_copy.Size = new System.Drawing.Size(105, 30);
             this.btn_copy.TabIndex = 4;
@@ -76,7 +80,7 @@
             // btn_push
             // 
             this.btn_push.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn_push.Location = new System.Drawing.Point(415, 188);
+            this.btn_push.Location = new System.Drawing.Point(415, 211);
             this.btn_push.Name = "btn_push";
             this.btn_push.Size = new System.Drawing.Size(105, 30);
             this.btn_push.TabIndex = 4;
@@ -86,7 +90,7 @@
             // btn_saveImage
             // 
             this.btn_saveImage.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn_saveImage.Location = new System.Drawing.Point(415, 132);
+            this.btn_saveImage.Location = new System.Drawing.Point(415, 155);
             this.btn_saveImage.Name = "btn_saveImage";
             this.btn_saveImage.Size = new System.Drawing.Size(105, 30);
             this.btn_saveImage.TabIndex = 4;
@@ -94,12 +98,35 @@
             this.btn_saveImage.UseVisualStyleBackColor = true;
             this.btn_saveImage.Click += new System.EventHandler(this.btn_saveImage_Click);
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel,
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 358);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(571, 22);
+            this.statusStrip1.TabIndex = 5;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel
+            // 
+            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(0, 17);
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(131, 17);
+            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+            // 
             // Form1
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 388);
+            this.ClientSize = new System.Drawing.Size(571, 380);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btn_saveImage);
             this.Controls.Add(this.btn_push);
             this.Controls.Add(this.btn_copy);
@@ -111,6 +138,8 @@
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.Form1_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.Form1_DragEnter);
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,6 +153,9 @@
         private System.Windows.Forms.Button btn_copy;
         private System.Windows.Forms.Button btn_push;
         private System.Windows.Forms.Button btn_saveImage;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }
 

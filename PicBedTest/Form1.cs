@@ -40,6 +40,11 @@ namespace PicBedTest
                 img = System.Windows.Forms.Clipboard.GetImage();
                 picBox.Image = img;
             }
+            else
+            {
+                this.toolStripStatusLabel.Text = "";
+                this.toolStripStatusLabel.Text = "there is not an image in clipboard!";
+            }
         }
     }
 }
